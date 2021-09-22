@@ -5,8 +5,10 @@ import { styled } from "@mui/material/styles";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Stack from "@mui/material/Stack";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import Badge from "@mui/material/Badge";
+import SearchIcon from "@mui/icons-material/Search";
+import NavbarMenu from "./NavbarMenu";
 
 const Container = style.div`
   height: 216px;
@@ -26,15 +28,16 @@ const Partone = style.div`
   width: 100px;
   height: 18px;
   display: flex;
-
   justify-content: space-evenly;
   align-items: center;
 `;
 
 const PartTwo = style.div`
-  width: 300px;
-  height: 18px;
-  border: 1px solid blue;
+  min-width: 300px;
+  height: auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Lang = style.div`
@@ -80,16 +83,56 @@ const DropdownItem = style.div`
   }
 `;
 
+const Profile = style.div`
+max-width:100px;
+color:#262626;
+display:flex;
+align-items:center;
+cursor:pointer
+`;
+
+const ProfileName = style.p`
+color:#262626;
+font-size:14px;
+font-weight:bold;
+cursor:pointer
+`;
+
+const CartInfo = style.div`
+width:130px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer
+`;
+
+const NoOfItems = style.p`
+color:#262626;
+font-size:14px;
+font-weight:bold;
+cursor:pointer
+
+`;
+
+const TotalAmount = style.div`
+color:#262626;
+font-size:14px;
+font-weight:bold;
+opacity:0.5;
+cursor:pointer
+`;
+
+const Search = style.div`
+cursor:pointer
+`;
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
-    minWidth: 10,
-    height: 10,
-    paddingTop:1,
-    paddingBottom:0,
-    paddingLeft:1,
-    paddingRight: 0,
-    fontSize: 7,
-    backgroundColor:'#ff1e56',
+    minWidth: 15,
+    height: 15,
+    padding: 1,
+    fontSize: 10,
+    backgroundColor: "#ff1e56",
+    color: "white",
   },
 }));
 
@@ -100,12 +143,13 @@ function Navbar() {
   const [selectCurr, setSelectCurr] = useState("$");
   const languages = ["EN", "HI", "TA"];
   const currencies = ["$", "₹"];
-  const Item=[4];
+  const Item = [4];
   return (
     <>
       <Container>
         <PageInfo>
           <Partone>
+            {/* language Settings */}
             <Lang>
               <Dropdownbtn onClick={(e) => setIsActiveOne(!isActiveOne)}>
                 {selectLang}
@@ -130,6 +174,9 @@ function Navbar() {
                 </DropdownContent>
               )}
             </Lang>
+
+            {/* Currency Settings */}
+
             <Currency>
               <Dropdownbtn onClick={() => setIsActiveTwo(!isActiveTwo)}>
                 {selectCurr}
@@ -156,30 +203,31 @@ function Navbar() {
             </Currency>
           </Partone>
           <PartTwo>
-            <StyledBadge badgeContent={Item} color="secondary">
-              <ShoppingCartIcon fontSize="small" />
-            </StyledBadge>
+            {/* Profile  */}
 
-            {/* <Profile>
-                      
-            </Profile> */}
-            {/* <CartInfo>
-            <Badge color="secondary" badgeContent={99}>
-            <ShoppingCartIcon />
-            </Badge>
-            <NoOfItems>
+            <Profile>
+              <PersonOutlineIcon />
+              <ProfileName>My profile</ProfileName>
+            </Profile>
 
-            </NoOfItems>
-            <TotalAmount>
-
-            </TotalAmount>
+            {/* Cart Details */}
+            <CartInfo>
+              <StyledBadge badgeContent={Item}>
+                <ShoppingCartIcon fontSize="medium" />
+              </StyledBadge>
+              <NoOfItems>2 items</NoOfItems>
+              <TotalAmount>$998</TotalAmount>
             </CartInfo>
-            <Search>
 
-            </Search> */}
+            {/* Search */}
+
+            <Search>
+              <SearchIcon />
+            </Search>
           </PartTwo>
         </PageInfo>
         <Header />
+        <NavbarMenu />
       </Container>
     </>
   );
