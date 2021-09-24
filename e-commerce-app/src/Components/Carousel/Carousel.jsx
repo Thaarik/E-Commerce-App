@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import { sliders } from "./CarouselData.js";
+import { sliders } from "./../../Products/Products.js";
 
 const Container = styled.div`
   width: 100%;
