@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar.jsx"
+import Home from "./Pages/Home.jsx"
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Container>
-        <Navbar />
+        <Home />
       </Container>
     </>
   );

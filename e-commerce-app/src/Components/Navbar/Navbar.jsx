@@ -11,6 +11,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import NavbarMenu from "./NavbarMenu";
 
 const Container = style.div`
+margin-top:20px;
   height: 216px;
   width: 100%;
 `;

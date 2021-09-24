@@ -1,9 +1,13 @@
 import React from 'react'
-import Header from './../Components/Header/Header'
+import Navbar from './../Components/Navbar/Navbar'
+import Carousel from '../Components/Carousel/Carousel'
+import BestSeller from '../Components/BestSeller/BestSeller'
 function Home() {
     return (
         <>
-           <Header />
+            <Navbar />
+            <Carousel/>
+            <BestSeller/>
         </>
     )
 }

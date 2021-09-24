@@ -5,13 +5,13 @@ const MenuContainer = styled.div`
   margin: 0 auto;
   display: flex;
   height: 20px;
-  max-width: 700px;
-  justify-content: space-between;
+  max-width: 900px;
+  justify-content: space-around;
   align-items: center;
 `;
 
 const Menu = styled.div`
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   font-weight: 800;
   cursor: pointer;
@@ -19,7 +19,7 @@ const Menu = styled.div`
   &:focus {
     color: #2e90e5;
     font-size: 14.5px;
-    transition: all 0.8s;
+    transition: all 0.5s ease-in-out;
   }
 `;
 function NavbarMenu() {
