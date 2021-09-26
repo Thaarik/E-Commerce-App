@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { products } from "./../../Products/Products.js";
-import { features } from "./../../Products/Products.js";
+import { products,features } from "../../Api/ApiData.js";
 
 const Container = styled.div`
   max-width: 1225px;
@@ -216,7 +215,7 @@ function BestSeller() {
           ))}
         </Wrapper>
 
-        {products.length > 8 && noOfProducts < products.length ? (
+        {display.length > 8 && noOfProducts < display.length ? (
           <LoadMore onClick={() => loadmore()}>Load More</LoadMore>
         ) : (
           ""

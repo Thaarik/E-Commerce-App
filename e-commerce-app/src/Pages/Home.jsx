@@ -3,6 +3,7 @@ import Navbar from './../Components/Navbar/Navbar'
 import Carousel from '../Components/Carousel/Carousel'
 import BestSeller from '../Components/BestSeller/BestSeller'
 import Advertisement from '../Components/Advertisement/Advertisement'
+import Services from '../Components/EServices/Services'
 function Home() {
     return (
         <>
@@ -10,6 +11,7 @@ function Home() {
             <Carousel/>
             <BestSeller/>
             <Advertisement />
+            <Services />
         </>
     )
 }
