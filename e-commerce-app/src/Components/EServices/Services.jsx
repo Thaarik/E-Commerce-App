@@ -37,7 +37,6 @@ function Services() {
         {services.map((service) => (
           <CardContainer key={service.id}>
             <IconImage src={service.icon} alt="#" />
-
             <ServiceTitle>{service.title}</ServiceTitle>
             <ServiceDescription>{service.description}</ServiceDescription>
           </CardContainer>

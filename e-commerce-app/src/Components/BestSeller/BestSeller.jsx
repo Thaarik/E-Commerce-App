@@ -116,7 +116,6 @@ const Rating = styled.div`
 `;
 const DiscountPrice = styled.p`
   padding-bottom: 30px;
-
   text-align: center;
   color: #ff4858;
   font-size: 16px;
