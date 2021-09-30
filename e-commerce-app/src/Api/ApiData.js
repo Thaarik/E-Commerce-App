@@ -19,6 +19,100 @@ import Hsquared from "./../Images/Web/H-squared.svg";
 import Netatmo from "./../Images/Web/Netatmo_rain.svg";
 import beats from "./../Images/Web/beats_solo_2.svg";
 
+export const dropdown = [
+  {
+    id: 1,
+    type: "accessories",
+    product: "Airport & Wireless",
+  },
+  {
+    id: 2,
+    type: "accessories",
+    product: "AppleCare",
+  },
+  {
+    id: 3,
+    type: "accessories",
+    product: "Bags, Shells & Sleeves",
+  },
+  {
+    id: 4,
+    type: "accessories",
+    product: "Business & Security",
+  },
+  {
+    id: 5,
+    type: "accessories",
+    product: "Cables & Docks",
+  },
+  {
+    id: 6,
+    type: "accessories",
+    product: "Cameras & Videos",
+  },
+  {
+    id: 7,
+    type: "accessories",
+    product: "Car & Travel",
+  },
+  {
+    id: 8,
+    type: "accessories",
+    product: "Cases & Films",
+  },
+
+  {
+    id: 9,
+    type: "category",
+    product: "Charging Devices",
+  },
+  {
+    id: 10,
+    type: "category",
+    product: "Connected Home",
+  },
+
+  {
+    id: 11,
+    type: "category",
+    product: "Device Care",
+  },
+  {
+    id: 12,
+    type: "category",
+    product: "Display & Graphic",
+  },
+  {
+    id: 13,
+    type: "category",
+    product: "Fitness & Sport",
+  },
+  {
+    id: 14,
+    type: "category",
+    product: "Headphones",
+  },
+  {
+    id: 15,
+    type: "category",
+    product: "Healthkit",
+  },
+  {
+    id: 16,
+    type: "category",
+    product: "Mice & Keyboards",
+  },
+  {
+    id: 17,
+    type: "category",
+    product: "Music Creation",
+  },
+  {
+    id: 18,
+    type: "category",
+    product: "Networking & Server",
+  },
+];
 export const features = [
   {
     id: 1,
@@ -87,7 +181,7 @@ export const products = [
     discountPrice: "499",
     rating: 4,
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: Macbook1,
   },
   {
@@ -98,7 +192,7 @@ export const products = [
     discountPrice: "499",
     rating: 4,
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: Macbook1,
   },
   {
@@ -109,7 +203,7 @@ export const products = [
     discountPrice: "499",
     rating: 4,
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: Macbook1,
   },
   {
@@ -120,7 +214,7 @@ export const products = [
     discountPrice: "499",
     rating: 4,
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: iPhone8,
   },
   {
@@ -130,7 +224,7 @@ export const products = [
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: iPhone11,
   },
   {
@@ -140,7 +234,7 @@ export const products = [
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: iPad,
   },
   {
@@ -150,7 +244,7 @@ export const products = [
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: iWatch,
   },
   {
@@ -160,7 +254,7 @@ export const products = [
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:false,
+    featured: false,
     img: iPod,
   },
   {
@@ -170,58 +264,57 @@ export const products = [
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:true,
+    featured: true,
     img: airpods,
   },
   {
-    id: 11,
+    id: 10,
     productName: "Apple iPod",
     category: "Accessories",
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:true,
+    featured: true,
     img: AirpodMax,
   },
   {
-    id: 12,
+    id: 11,
     productName: "H-Squared tvTray",
     category: "Accessories",
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:true,
+    featured: true,
     img: Hsquared,
   },
   {
-    id: 13,
+    id: 12,
     productName: "Netatmo Rain Gauge",
     category: "Accessories",
     originalPrice: "599",
     discountPrice: "499",
     bestSeller: true,
-    featured:true,
+    featured: true,
     img: Netatmo,
   },
   {
-    id: 14,
+    id: 13,
     productName: "Beats Solo 2 On Ear Headphones - Black",
     category: "Accessories",
     originalPrice: "599",
     discountPrice: "499",
-    bestSeller: true,
-    featured:true,
+    bestSeller: false,
+    featured: true,
     img: beats,
   },
   {
-    id: 15,
+    id: 14,
     productName: "Apple iPod",
     category: "Accessories",
     originalPrice: "599",
     discountPrice: "499",
-    bestSeller: true,
-    featured:true,
+    bestSeller: false,
+    featured: true,
     img: AirpodMax,
   },
-  
 ];

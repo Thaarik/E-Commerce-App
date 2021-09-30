@@ -1,5 +1,6 @@
 import "./App.css";
-import Home from "./Pages/Home.jsx"
+// import Home from "./Pages/Home.jsx"
+import ProductPage from "./Pages/ProductPage.jsx"
 import styled from "styled-components";
 
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <>
       <Container>
-        <Home />
+        {/* <Home /> */}
+        <ProductPage/>
       </Container>
     </>
   );
