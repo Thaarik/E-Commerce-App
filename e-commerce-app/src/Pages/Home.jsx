@@ -12,7 +12,7 @@ function Home() {
             <Navbar />
             <Carousel/>
             <BestSeller/>
-            <Advertisement />
+            <Advertisement height={"600px"} width={"1920px"}/>
             <Services />
             <Featured />
             <Footer/>

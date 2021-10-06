@@ -8,7 +8,7 @@ import airpods from "./../Images/Products/apple_airpods.png";
 import AirpodMax from "./../Images/Products/415ELavtbuL._SL1000_.png";
 import favourite from "./../Images/Web/favorite_icon.svg";
 import cart from "./../Images/Web/add_cart_icon.svg";
-import iphone6 from "./../Images/Web/iphone_6_plus.svg";
+// import iphone6 from "./../Images/Web/iphone_6_plus.svg";
 import Carousel1 from "./../Images/miscellaneous/corousel_1.png";
 import Carousel2 from "./../Images/miscellaneous/corousel_2.png";
 import Carousel3 from "./../Images/miscellaneous/corousel_3.png";
@@ -113,20 +113,7 @@ export const dropdown = [
     product: "Networking & Server",
   },
 ];
-export const features = [
-  {
-    id: 1,
-    img: favourite,
-  },
-  {
-    id: 2,
-    img: cart,
-  },
-  {
-    id: 3,
-    img: iphone6,
-  },
-];
+// export const 
 
 export const services = [
   {
@@ -183,6 +170,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: Macbook1,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 2,
@@ -194,6 +191,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: Macbook1,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 3,
@@ -205,6 +212,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: Macbook1,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 4,
@@ -216,6 +233,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: iPhone8,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 5,
@@ -226,6 +253,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: iPhone11,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 6,
@@ -236,6 +273,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: iPad,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 7,
@@ -246,6 +293,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: iWatch,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 8,
@@ -256,6 +313,16 @@ export const products = [
     bestSeller: true,
     featured: false,
     img: iPod,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 9,
@@ -266,6 +333,16 @@ export const products = [
     bestSeller: true,
     featured: true,
     img: airpods,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 10,
@@ -276,6 +353,16 @@ export const products = [
     bestSeller: true,
     featured: true,
     img: AirpodMax,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 11,
@@ -286,6 +373,16 @@ export const products = [
     bestSeller: true,
     featured: true,
     img: Hsquared,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 12,
@@ -296,6 +393,16 @@ export const products = [
     bestSeller: true,
     featured: true,
     img: Netatmo,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 13,
@@ -306,6 +413,16 @@ export const products = [
     bestSeller: false,
     featured: true,
     img: beats,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
   {
     id: 14,
@@ -316,5 +433,15 @@ export const products = [
     bestSeller: false,
     featured: true,
     img: AirpodMax,
+    features : [
+      {
+        
+        img: favourite,
+      },
+      {
+        
+        img: cart,
+      },
+    ],
   },
 ];

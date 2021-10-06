@@ -7,7 +7,7 @@ const Product = styled.div`
   width:100%;
   border: 3px solid #f6f7f8;
   border-radius: 4px;
-  margin: 15px;
+  margin: 7px;
   &:hover,
   &:focus {
     box-shadow: 0px 0px 10px lightgrey;
@@ -100,16 +100,16 @@ const Cart = styled.img`
   }
 `;
 
-function Products({ details, features }) {
+function Products({ details, hot }) {
   return (
     <>
       <Product key={details.id}>
-        {details.bestSeller && <Hot>HOT</Hot>}
+        {details.bestSeller && (hot?<Hot>HOT</Hot>:"")}
         <ProductImage>
           <Image src={details.img} alt="#" />
           <AddCart>
-            <Fav src={features[0].img} alt="#" />
-            <Cart src={features[1].img} alt="#" />
+            <Fav src={details.features[0].img} alt="#" />
+            <Cart src={details.features[1].img} alt="#" />
           </AddCart>
         </ProductImage>
         <ProductTitle>{details.productName}</ProductTitle>

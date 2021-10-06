@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { products, features } from "../../Api/ApiData.js";
+import { products } from "../../Api/ApiData.js";
 import Products from "../Products/Products.jsx";
 const Container = styled.div`
   max-width: 1225px;
@@ -80,8 +80,6 @@ function BestSeller() {
   const loadmore = () => {
     setNoOfProducts(noOfProducts + 4);
   };
-  console.log(display);
-  console.log(visible);
   return (
     <>
       <Container>
@@ -98,7 +96,7 @@ function BestSeller() {
         </BestSellerCategory>
         <Wrapper>
           {visible.map((product) => (
-            <Products key={product.id} details={product} features={features} />
+            <Products key={product.id} details={product} />
           ))}
         </Wrapper>
 

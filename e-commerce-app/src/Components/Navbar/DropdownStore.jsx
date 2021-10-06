@@ -6,6 +6,7 @@ const Container = styled.div`
   width: 100%;
   margin: auto;
   display: flex;
+  z-index:9;
 `;
 const Title = styled.p`
   width: 100%;

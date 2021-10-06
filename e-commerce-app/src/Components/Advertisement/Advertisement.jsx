@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { features } from "../../Api/ApiData.js";
+import iphone from "./../../Images/Web/iphone_6_plus.svg"
 
 const AdContainer = styled.div`
-  width: 100%;
-  height: 703px;
+  max-width: ${props=>props.width};
+  max-height:  ${props=>props.height};
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -13,7 +13,7 @@ const AdContainer = styled.div`
 
 const AdBackground = styled.div`
   width: 100%;
-  height: 600px;
+  height:100%;
   background-color: rgba(46, 144, 229, 1);
   position: absolute;
   bottom: 0;
@@ -21,10 +21,11 @@ const AdBackground = styled.div`
 
 const AdText = styled.div`
   max-width: 394px;
-  height: 400px;
+  height:  ${props=>props.width<"870px"?"400px":"180px"};
   z-index: 10;
   color: #fff;
   margin:50px;
+  align-self: baseline;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,12 +33,11 @@ const AdText = styled.div`
 
 const AdTitle = styled.h1`
   font-weight: 400;
-  font-size: 66px;
+  font-size: ${props=>props.width<"870px"?"66px":"42px"};
 `;
 
 const Adp = styled.p`
-  /* padding-top: 25px; */
-  font-size: 24px;
+  font-size:  ${props=>props.width<"870px"?"24px":"16px"};
 `;
 
 const ShopNow = styled.div`
@@ -57,25 +57,25 @@ const ShopNow = styled.div`
 
 const AdImageCont = styled.div`
   height: auto;
-  z-index: 9;
+  z-index: 5;
 `;
 
 const AdImage = styled.img`
-  max-width: 649px;
+  max-width: ${props=>props.width<"870px"?"649px":"360px"};
   width: 100%;
   height: auto;
 `;
 
-function Advertisement() {
+function Advertisement({height,width}) {
   return (
-    <AdContainer>
+    <AdContainer height={height} width={width}>
       <AdText>
-        <AdTitle>iPhone 6 Plus</AdTitle>
-        <Adp>Performance and design. Taken right to the edge.</Adp>
+        <AdTitle  width={width}>iPhone 6 Plus</AdTitle>
+        <Adp width={width}>Performance and design. Taken right to the edge.</Adp>
         <ShopNow>SHOP NOW</ShopNow>
       </AdText>
       <AdImageCont>
-        <AdImage src={features[2].img} alt="#" />
+        <AdImage width={width} src={iphone} alt="#" />
       </AdImageCont>
       <AdBackground></AdBackground>
     </AdContainer>
