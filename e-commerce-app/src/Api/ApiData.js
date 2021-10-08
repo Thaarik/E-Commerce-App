@@ -23,12 +23,12 @@ export const dropdown = [
   {
     id: 1,
     type: "accessories",
-    product: "Airport & Wireless",
+    product: "Air port & Wireless",
   },
   {
     id: 2,
     type: "accessories",
-    product: "AppleCare",
+    product: "Apple Care",
   },
   {
     id: 3,
@@ -114,7 +114,24 @@ export const dropdown = [
   },
 ];
 // export const 
-
+export const brands=[
+  {
+    id:1,
+    brand:"Apple",
+  },
+  {
+    id:2,
+    brand:"LG",
+  },
+  {
+    id:3,
+    brand:"Samsung",
+  },
+  {
+    id:4,
+    brand:"Nokia",
+  },
+]
 export const services = [
   {
     id: 1,
