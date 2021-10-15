@@ -19,6 +19,32 @@ import Hsquared from "./../Images/Web/H-squared.svg";
 import Netatmo from "./../Images/Web/Netatmo_rain.svg";
 import beats from "./../Images/Web/beats_solo_2.svg";
 
+export const cartItem=[
+  {
+    id:1,
+    productImage:airpods,
+    title:"Apple Airpods",
+    price:998,
+    quantity:2,
+    unitprice:499,
+  },
+  {
+    id:2,
+    productImage:airpods,
+    title:"Apple Airpods",
+    price:998,
+    quantity:2,
+    unitprice:499,
+  },
+  {
+    id:3,
+    productImage:airpods,
+    title:"Apple Airpods",
+    price:998,
+    quantity:2,
+    unitprice:499,
+  },
+]
 export const dropdown = [
   {
     id: 1,
