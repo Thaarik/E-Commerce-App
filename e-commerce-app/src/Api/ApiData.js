@@ -8,7 +8,6 @@ import airpods from "./../Images/Products/apple_airpods.png";
 import AirpodMax from "./../Images/Products/415ELavtbuL._SL1000_.png";
 import favourite from "./../Images/Web/favorite_icon.svg";
 import cart from "./../Images/Web/add_cart_icon.svg";
-// import iphone6 from "./../Images/Web/iphone_6_plus.svg";
 import Carousel1 from "./../Images/miscellaneous/corousel_1.png";
 import Carousel2 from "./../Images/miscellaneous/corousel_2.png";
 import Carousel3 from "./../Images/miscellaneous/corousel_3.png";

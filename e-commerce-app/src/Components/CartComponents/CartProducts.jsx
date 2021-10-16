@@ -37,7 +37,7 @@ const Title = styled.p`
 const Bottom = styled.div`
   height: 422px;
   width: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
   /* background-color: aliceblue; */
 `;
 const Item = styled.div`
